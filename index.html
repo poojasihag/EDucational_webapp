@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -280,7 +282,162 @@
     <!--============END OF Faqs=====================-->
 
 
+    <section class="container testimonials__container mySwiper">
+        <h2>Students' Testimonials</h2>
+        <div class="swiper-wrapper">
+
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar1.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa, neque inventore veniam
+                        doloremque fugit natus officia rem quisquam!</p>
+                </div>
+            </article>
+
+
+
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar2.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Ernest Achiever</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa, neque inventore veniam
+                        doloremque fugit natus officia rem quisquam!</p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar3.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Edem Quist</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa, neque inventore veniam
+                        doloremque fugit natus officia rem quisquam!</p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar4.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa, neque inventore veniam
+                        doloremque fugit natus officia rem quisquam!</p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar5.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa, neque inventore veniam
+                        doloremque fugit natus officia rem quisquam!</p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar2.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa, neque inventore veniam
+                        doloremque fugit natus officia rem quisquam!</p>
+                </div>
+            </article>
+
+
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar4.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa, neque inventore veniam
+                        doloremque fugit natus officia rem quisquam!</p>
+                </div>
+            </article>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+
+    <!-- MAIN JS -->
     <script src="./main.js"></script>
+
+
+    <!-- Swiper js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            mousewheel: true,
+            keyboard: true,
+            //   when window width is >=600px
+            breakpoints: {
+                600: { slidesPerView: 2, }
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>
